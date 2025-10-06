@@ -7,7 +7,7 @@ entities:
   - entity: lock
     dps:
       - id: 1
-        type: string
+        type: base64
         name: create_unlock_method
         optional: true
         sensitive: true
@@ -21,10 +21,9 @@ entities:
         optional: true
         sensitive: true
       - id: 6
-        type: string
+        type: base64
         name: bluetooth_unlock
         optional: true
-        sensitive: true
       - id: 8
         name: residual_electricity
         type: integer
@@ -119,7 +118,7 @@ entities:
         sensitive: true
       - id: 54
         name: sync_method
-        type: string
+        type: base64
         optional: true
         sensitive: true
       - id: 55
@@ -129,12 +128,12 @@ entities:
         persist: false
       - id: 60
         name: remote_no_pd_setkey
-        type: string
+        type: base64
         optional: true
         sensitive: true
       - id: 61
         name: remote_no_dp_key
-        type: string
+        type: base64
         optional: true
         sensitive: true
       - id: 62
