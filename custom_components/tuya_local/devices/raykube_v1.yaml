@@ -2,7 +2,7 @@ name: Door lock
 products:
   - id: 7a4xvbtt
     manufacturer: Raykube
-    model: V1
+    model: JH_V1
 entities:
   - entity: lock
     dps:
