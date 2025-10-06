@@ -1,0 +1,138 @@
+name: Door lock
+products:
+  - id: 7a4xvbtt
+    manufacturer: Raykube
+    model: V1
+entities:
+  - entity: lock
+    dps:
+      - id: 1
+        type: string
+        name: create_unlock_method
+        optional: true
+        sensitive: true
+      - id: 2
+        type: string
+        name: delete_unlock_method
+        optional: true
+      - id: 3
+        type: string
+        name: modify_unlock_method
+        optional: true
+        sensitive: true
+      - id: 6
+        type: string
+        name: bluetooth_unlock
+        optional: true
+        sensitive: true
+      - id: 8
+        type: string
+        name: unlock_fingerprint
+        optional: true
+        sensitive: true
+      - id: 12
+        type: integer
+        name: unlock_fingerprint
+        optional: true
+        persist: false
+      - id: 13
+        name: unlock_password
+        type: integer
+        optional: true
+        persist: false
+      - id: 14
+        name: unlock_dynamic_pwd
+        type: integer
+        optional: true
+        persist: false
+      - id: 15
+        name: unlock_card
+        type: integer
+        optional: true
+        persist: false
+      - id: 19
+        name: unlock_ble
+        type: integer
+        optional: true
+        persist: false
+      - id: 21
+        name: alarm_lock
+        type: string
+        optional: true
+        persist: false
+      - id: 33
+        name: automatic_lock
+        type: integer
+        optional: true
+        persist: false
+      - id: 36
+        name: auto_lock_time
+        type: integer
+        optional: true
+        persist: false
+      - id: 46
+        name: manual_lock
+        type: boolean
+        optional: true
+        persist: false
+      - id: 47
+        name: lock_state
+        type: boolean
+        optional: true
+      - id: 51
+        name: temporary_password_creat
+        type: string
+        optional: true
+        sensitive: true
+      - id: 52
+        name: temporary_password_delete
+        type: string
+        optional: true
+      - id: 53
+        name: temporary_password_modify
+        type: string
+        optional: true
+        sensitive: true
+      - id: 54
+        name: sync_method
+        type: string
+        optional: true
+        sensitive: true
+      - id: 55
+        name: unlock_temporary
+        type: integer
+        optional: true
+        persist: false
+      - id: 60
+        name: remote_no_pd_setkey
+        type: string
+        optional: true
+        sensitive: true
+      - id: 61
+        name: remote_no_dp_key
+        type: string
+        optional: true
+        sensitive: true
+      - id: 62
+        name: unlock_phone_remote
+        type: integer
+        optional: true
+        persist: false
+      - id: 64
+        name: password_offline_time
+        type: string
+        optional: true
+      - id: 65
+        name: unlock_offline_clear_single
+        type: string
+        optional: true
+      - id: 66
+        name: unlock_offline_clear
+        type: base64
+        optional: true
+        persist: false
+      - id: 67
+        name: unlock_offline_pwd
+        type: base64
+        optional: true
+        persist: false
