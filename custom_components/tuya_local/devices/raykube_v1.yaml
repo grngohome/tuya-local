@@ -74,11 +74,6 @@ entities:
         name: automatic_lock
         type: boolean
         optional: true
-        mapping:
-          - dps_val: true
-            value: false
-          - dps_val: false
-            value: true
       - id: 36
         name: auto_lock_time
         type: integer
@@ -88,11 +83,6 @@ entities:
         name: manual_lock
         type: boolean
         optional: true
-        mapping:
-          - dps_val: true
-            value: false
-          - dps_val: false
-            value: true
       - id: 47
         name: lock_motor_state
         type: boolean
@@ -175,3 +165,45 @@ entities:
             value: Wrong Card
           - dps_val: low_battery
             value: Low Battery
+          - dps_val: power_off
+            value: Power Off
+          - dps_val: wrong_unlock
+            value: Wrong Unlock
+  - entity: sensor
+    class: battery
+    dps:
+      - id: 8
+        type: integer
+        name: sensor
+        unit: "%"
+      - id: 9
+        type: string
+        optional: true
+        name: battery_state
+  - entity: number
+    name: Auto lock delay
+    icon: "mdi:lock-clock"
+    category: config
+    dps:
+      - id: 36
+        type: integer
+        name: value
+        optional: true
+        range:
+          min: 0
+          max: 1800
+        unit: s
+  - entity: switch
+    name: Auto lock
+    category: config
+    icon: "mdi:lock-reset"
+    dps:
+      - id: 33
+        type: boolean
+        name: switch
+        optional: true
+        mapping:
+          - dps_val: true
+            value: false
+          - dps_val: false
+            value: true
